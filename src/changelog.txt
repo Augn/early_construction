@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 03. 08. 2026
+  Compatibility:
+    - Updated for Factorio 2.1.
+  Changes:
+    - Updated player-built entity handling for the Factorio 2.1 runtime API.
+    - Early construction robots now respect the 2.1 tall-entity visibility toggle.
+    - Manually placed robots are returned with their original quality.
+    - The redo shortcut is now unlocked by the early construction technology.
+    - Removed obsolete prototype properties.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 21. 10. 2024
   Features:

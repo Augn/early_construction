@@ -11,6 +11,7 @@ local robotics_shortcuts = {
     "give-upgrade-planner",
     "import-string",
     "paste",
+    "redo",
     "toggle-personal-roboport",
     "undo",
 }

@@ -28,13 +28,14 @@ on_robot_mined = function (event)
 end
 
 on_built_entity = function (event)
-    local entity = event.created_entity
+    local entity = event.entity
     if not entity or entity.name ~= 'early-construction-robot' then return end
     local player = game.players[event.player_index]
+    local quality = entity.quality.name
 
     entity.destroy()
     player.print('Early construction robots cannot be deployed manually, use an early construction equipment in the armor instead.', {r=1,g=0,b=0,a=1})
-    player.insert({ name = 'early-construction-robot', count = 1 })
+    player.insert({ name = 'early-construction-robot', count = 1, quality = quality })
 end
 
 on_player_mined_entity = function (event)
